@@ -1,0 +1,297 @@
+ERROR - 2022-07-02 00:08:03 --> Duplicate entry '0' for key 'PRIMARY'
+CRITICAL - 2022-07-02 00:08:03 --> Duplicate entry '0' for key 'PRIMARY'
+#0 C:\xampp\htdocs\baru\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\baru\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\baru\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\baru\ci4\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\baru\ci4\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\baru\ci4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\baru\ci4\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\baru\ci4\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\baru\ci4\app\Controllers\Pelayanan.php(57): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(832): App\Controllers\Pelayanan->simpan()
+#10 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelayanan))
+#11 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2022-07-02 00:17:04 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\baru\ci4\app\Models\PelayananModel.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 54)
+#1 C:\xampp\htdocs\baru\ci4\app\Controllers\Pelayanan.php(26): App\Models\PelayananModel->id()
+#2 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(832): App\Controllers\Pelayanan->daftar()
+#3 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelayanan))
+#4 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-02 00:53:28 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\baru\ci4\app\Models\PelayananModel.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 54)
+#1 C:\xampp\htdocs\baru\ci4\app\Controllers\Pelayanan.php(26): App\Models\PelayananModel->id()
+#2 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(832): App\Controllers\Pelayanan->daftar()
+#3 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelayanan))
+#4 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-02 00:53:49 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\baru\ci4\app\Models\PelayananModel.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 36)
+#1 C:\xampp\htdocs\baru\ci4\app\Controllers\Pelayanan.php(27): App\Models\PelayananModel->noPendaftaran()
+#2 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(832): App\Controllers\Pelayanan->daftar()
+#3 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelayanan))
+#4 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-02 01:20:57 --> Call to undefined method App\Models\PelayananModel::id
+#0 C:\xampp\htdocs\baru\ci4\app\Controllers\Pelayanan.php(26): CodeIgniter\Model->__call('id', Array)
+#1 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(832): App\Controllers\Pelayanan->daftar()
+#2 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelayanan))
+#3 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-07-02 01:21:37 --> Call to undefined method App\Models\PelayananModel::id
+#0 C:\xampp\htdocs\baru\ci4\app\Controllers\Pelayanan.php(26): CodeIgniter\Model->__call('id', Array)
+#1 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(832): App\Controllers\Pelayanan->daftar()
+#2 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelayanan))
+#3 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-07-02 01:22:27 --> Call to undefined method App\Models\PelayananModel::id
+#0 C:\xampp\htdocs\baru\ci4\app\Controllers\Pelayanan.php(26): CodeIgniter\Model->__call('id', Array)
+#1 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(832): App\Controllers\Pelayanan->daftar()
+#2 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelayanan))
+#3 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-07-02 01:22:46 --> Call to undefined method App\Models\PelayananModel::id
+#0 C:\xampp\htdocs\baru\ci4\app\Controllers\Pelayanan.php(26): CodeIgniter\Model->__call('id', Array)
+#1 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(832): App\Controllers\Pelayanan->daftar()
+#2 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelayanan))
+#3 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-07-02 01:23:51 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\baru\ci4\app\Models\PelayananModel.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 35)
+#1 C:\xampp\htdocs\baru\ci4\app\Controllers\Pelayanan.php(27): App\Models\PelayananModel->noPendaftaran()
+#2 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(832): App\Controllers\Pelayanan->daftar()
+#3 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelayanan))
+#4 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-07-02 02:26:15 --> Call to undefined method App\Models\PelayananModel::id
+#0 C:\xampp\htdocs\baru\ci4\app\Controllers\Pelayanan.php(26): CodeIgniter\Model->__call('id', Array)
+#1 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(832): App\Controllers\Pelayanan->daftar()
+#2 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelayanan))
+#3 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-07-02 02:26:48 --> Call to undefined method App\Models\PelayananModel::id
+#0 C:\xampp\htdocs\baru\ci4\app\Controllers\Pelayanan.php(26): CodeIgniter\Model->__call('id', Array)
+#1 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(832): App\Controllers\Pelayanan->daftar()
+#2 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelayanan))
+#3 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-07-02 07:12:24 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\baru\ci4\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\baru\ci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\baru\ci4\system\Common.php(1089): CodeIgniter\View\View->render('/loket/index', Array, true)
+#3 C:\xampp\htdocs\baru\ci4\app\Controllers\Loket.php(22): view('/loket/index', Array)
+#4 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(832): App\Controllers\Loket->index()
+#5 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loket))
+#6 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-07-02 07:14:50 --> Undefined variable $pelayanan
+#0 C:\xampp\htdocs\baru\ci4\app\Views\loket\index.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 47)
+#1 C:\xampp\htdocs\baru\ci4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\baru\ci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\baru\ci4\system\Common.php(1089): CodeIgniter\View\View->render('/loket/index', Array, true)
+#4 C:\xampp\htdocs\baru\ci4\app\Controllers\Loket.php(22): view('/loket/index', Array)
+#5 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(832): App\Controllers\Loket->index()
+#6 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loket))
+#7 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-07-02 07:15:06 --> Undefined variable $pelayanan
+#0 C:\xampp\htdocs\baru\ci4\app\Views\loket\index.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 46)
+#1 C:\xampp\htdocs\baru\ci4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\baru\ci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\baru\ci4\system\Common.php(1089): CodeIgniter\View\View->render('/loket/index', Array, true)
+#4 C:\xampp\htdocs\baru\ci4\app\Controllers\Loket.php(22): view('/loket/index', Array)
+#5 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(832): App\Controllers\Loket->index()
+#6 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loket))
+#7 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-07-02 07:16:21 --> Undefined variable $pelayanan
+#0 C:\xampp\htdocs\baru\ci4\app\Views\loket\index.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 47)
+#1 C:\xampp\htdocs\baru\ci4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\baru\ci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\baru\ci4\system\Common.php(1089): CodeIgniter\View\View->render('/loket/index', Array, true)
+#4 C:\xampp\htdocs\baru\ci4\app\Controllers\Loket.php(22): view('/loket/index', Array)
+#5 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(832): App\Controllers\Loket->index()
+#6 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loket))
+#7 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-07-02 07:17:08 --> Undefined variable $pelayanan
+#0 C:\xampp\htdocs\baru\ci4\app\Views\loket\index.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 47)
+#1 C:\xampp\htdocs\baru\ci4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\baru\ci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\baru\ci4\system\Common.php(1089): CodeIgniter\View\View->render('/loket/index', Array, true)
+#4 C:\xampp\htdocs\baru\ci4\app\Controllers\Loket.php(22): view('/loket/index', Array)
+#5 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(832): App\Controllers\Loket->index()
+#6 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loket))
+#7 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-07-02 07:21:40 --> Too few arguments to function App\Controllers\Loket::index(), 0 passed in C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(832): App\Controllers\Loket->index()
+#1 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loket))
+#2 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-02 07:27:38 --> Too few arguments to function App\Controllers\Loket::index(), 0 passed in C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(832): App\Controllers\Loket->index()
+#1 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loket))
+#2 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-02 07:31:05 --> Too few arguments to function App\Controllers\Loket::index(), 0 passed in C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(832): App\Controllers\Loket->index()
+#1 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loket))
+#2 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-02 14:01:41 --> Undefined array key "kode"
+#0 C:\xampp\htdocs\baru\ci4\app\Views\index.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 13)
+#1 C:\xampp\htdocs\baru\ci4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\baru\ci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\baru\ci4\system\Common.php(1089): CodeIgniter\View\View->render('index', Array, true)
+#4 C:\xampp\htdocs\baru\ci4\app\Controllers\Home.php(22): view('index', Array)
+#5 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(832): App\Controllers\Home->index('$1')
+#6 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-07-02 14:02:17 --> Undefined variable $pelayanan
+#0 C:\xampp\htdocs\baru\ci4\app\Views\index.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 13)
+#1 C:\xampp\htdocs\baru\ci4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\baru\ci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\baru\ci4\system\Common.php(1089): CodeIgniter\View\View->render('index', Array, true)
+#4 C:\xampp\htdocs\baru\ci4\app\Controllers\Home.php(22): view('index', Array)
+#5 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(832): App\Controllers\Home->index('$1')
+#6 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-07-02 14:03:42 --> Too few arguments to function App\Controllers\Home::index(), 0 passed in C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-02 14:04:02 --> syntax error, unexpected token ")", expecting variable or "{" or "$"
+#0 C:\xampp\htdocs\baru\ci4\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\baru\ci4\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-02 14:14:33 --> Undefined variable $pelayanan
+#0 C:\xampp\htdocs\baru\ci4\app\Views\index.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 13)
+#1 C:\xampp\htdocs\baru\ci4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\baru\ci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\baru\ci4\system\Common.php(1089): CodeIgniter\View\View->render('index', Array, true)
+#4 C:\xampp\htdocs\baru\ci4\app\Controllers\Home.php(22): view('index', Array)
+#5 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(832): App\Controllers\Home->index('$1')
+#6 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-07-02 14:15:37 --> Undefined variable $pelayanan
+#0 C:\xampp\htdocs\baru\ci4\app\Views\index.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 13)
+#1 C:\xampp\htdocs\baru\ci4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\baru\ci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\baru\ci4\system\Common.php(1089): CodeIgniter\View\View->render('index', Array, true)
+#4 C:\xampp\htdocs\baru\ci4\app\Controllers\Home.php(22): view('index', Array)
+#5 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(832): App\Controllers\Home->index('$1')
+#6 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-07-02 14:18:20 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\baru\ci4\app\Views\loket\ambil_loket.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 14)
+#1 C:\xampp\htdocs\baru\ci4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\baru\ci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\baru\ci4\system\Common.php(1089): CodeIgniter\View\View->render('/loket/ambil_lo...', Array, true)
+#4 C:\xampp\htdocs\baru\ci4\app\Controllers\Loket.php(60): view('/loket/ambil_lo...', Array)
+#5 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(832): App\Controllers\Loket->panggil('$1')
+#6 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loket))
+#7 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-07-02 14:18:37 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\baru\ci4\app\Views\loket\ambil_loket.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 14)
+#1 C:\xampp\htdocs\baru\ci4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\baru\ci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\baru\ci4\system\Common.php(1089): CodeIgniter\View\View->render('/loket/ambil_lo...', Array, true)
+#4 C:\xampp\htdocs\baru\ci4\app\Controllers\Loket.php(60): view('/loket/ambil_lo...', Array)
+#5 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(832): App\Controllers\Loket->panggil('$1')
+#6 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loket))
+#7 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-07-02 14:18:42 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\baru\ci4\app\Views\loket\ambil_loket.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 14)
+#1 C:\xampp\htdocs\baru\ci4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\baru\ci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\baru\ci4\system\Common.php(1089): CodeIgniter\View\View->render('/loket/ambil_lo...', Array, true)
+#4 C:\xampp\htdocs\baru\ci4\app\Controllers\Loket.php(60): view('/loket/ambil_lo...', Array)
+#5 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(832): App\Controllers\Loket->panggil('0')
+#6 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loket))
+#7 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-07-02 23:48:57 --> MySQL server has gone away
+CRITICAL - 2022-07-02 23:48:57 --> MySQL server has gone away
+#0 C:\xampp\htdocs\baru\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\baru\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\baru\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\baru\ci4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\baru\ci4\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\baru\ci4\app\Models\AntrianModel.php(21): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\baru\ci4\app\Controllers\Home.php(20): App\Models\AntrianModel->getAll()
+#7 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\baru\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\baru\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\baru\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
